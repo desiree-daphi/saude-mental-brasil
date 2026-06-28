@@ -12,7 +12,7 @@
 |---|---|
 | Coleta e limpeza dos dados | ✅ Concluído |
 | Análise exploratória — DATASUS | ✅ Concluído |
-| Análise exploratória — PNS 2019 | ✅ Concluído |
+| Análise exploratória — PNS 2019 | 🔄 Em finalização |
 | Dashboard Power BI | 🔄 Em finalização |
 | Documentação dos achados | 🔄 Em andamento |
 

@@ -74,7 +74,7 @@ saude-mental-brasil/
 
 4. Observa-se um **declínio nas internações por transtornos mentais em 2020–2021**, possivelmente relacionado à pandemia de COVID-19, que pode ter impactado o acesso a serviços de saúde mental e a priorização de notificações hospitalares.
 
-5. A **região Sudeste** concentra o maior volume de internações psiquiátricas no período (2015–2024). Esse achado merece investigação adicional, considerando fatores como densidade populacional, cobertura de serviços especializados e subnotificação em outras regiões.
+5. A **região Sudeste** concentra o maior volume de internações psiquiátricas no período (2015–2024), porém é a região com maior densidade populacional. Esse achado merece investigação adicional, considerando fatores como densidade populacional, cobertura de serviços especializados e subnotificação em outras regiões (ex: Norte, região com menor número registrado).
 
 ---
 

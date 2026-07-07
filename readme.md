@@ -4,18 +4,6 @@
 [![Pandas](https://img.shields.io/badge/Pandas-2.x-green)](https://pandas.pydata.org)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)](https://powerbi.microsoft.com)
 
-## Status do projeto
-
-🟡 Em desenvolvimento
-
-| Etapa | Status |
-|---|---|
-| Coleta e limpeza dos dados | ✅ Concluído |
-| Análise exploratória — DATASUS | ✅ Concluído |
-| Análise exploratória — PNS 2019 | 🔄 Em finalização |
-| Dashboard Power BI | 🔄 Em finalização |
-| Documentação dos achados | 🔄 Em andamento |
-
 ---
 
 ## Sobre o projeto
@@ -78,6 +66,39 @@ saude-mental-brasil/
 
 ---
 
+## Discussão e Limitações
+
+### Desigualdade regional nas internações
+
+A concentração de internações por transtornos mentais na região Sudeste deve ser interpretada com cautela. Regiões com maior cobertura de serviços especializados, como hospitais psiquiátricos e Centros de Atenção Psicossocial (CAPS), tendem a registrar mais internações, o que não implica necessariamente maior prevalência de transtornos mentais na população.
+A menor notificação na região Norte pode refletir **subcobertura assistencial**, pessoas com transtornos mentais que não chegam a ser internadas por falta de acesso a serviços especializados, e não por ausência de adoecimento. Uma análise mais robusta exigiria o cálculo da taxa de internação por 100 mil habitantes, controlada pela oferta de leitos psiquiátricos e cobertura de CAPS por região, o que constitui uma agenda de investigação para versões futuras deste projeto.
+
+---
+
+### Limitação temporal dos dados de prevalência
+
+Os dados de prevalência de depressão utilizados neste projeto são da PNS 2019. Edição mais recente disponível desta pesquisa para a população adulta brasileira. A PNS é realizada pelo IBGE em ciclos de aproximadamente 5 a 7 anos; a próxima edição está prevista para 2026. Portanto, os dados de prevalência **não capturam possíveis mudanças ocorridas entre 2020 e 2025**, incluindo os impactos da pandemia de COVID-19 na saúde mental da população (um período documentado internacionalmente como de aumento expressivo de transtornos ansiosos e depressivos).
+Os dados de internações (DATASUS/SIH-SUS) cobrem o período de 2015 a 2024 e permitem uma análise temporal mais recente, sendo complementares à fotografia oferecida pela PNS 2019.
+
+---
+
+### Validade e escopo dos dados
+
+Os achados deste projeto têm caráter **exploratório e descritivo**. Os dados da PNS 2019 representam um recorte temporal específico e não devem ser interpretados como estimativas atuais da prevalência de depressão no Brasil. Os dados de internações (DATASUS, 2015–2024) também possuem limitação intrínseca: registram apenas casos que resultaram em internação hospitalar, excluindo a parcela da população que recebe tratamento ambulatorial, que não busca tratamento ou que não tem acesso a serviços de saúde mental.
+Dessa forma, os resultados apresentados devem ser lidos como uma aproximação do fenômeno; úteis para identificar padrões e levantar hipóteses, e não como estimativas definitivas de prevalência populacional atual.
+
+---
+
+## Referências Bibliográficas
+
+BRASIL. Ministério da Saúde. **Sistema de Informações Hospitalares do SUS (SIH/SUS)**. Brasília: DATASUS, 2024. Disponível em: https://datasus.saude.gov.br/informacoes-de-saude-tabnet/. Acesso em: 28 jun. 2026.
+
+IBGE – INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. **Pesquisa nacional de saúde 2019**: percepção do estado de saúde, estilos de vida, doenças crônicas e saúde bucal: Brasil e grandes regiões. Rio de Janeiro: IBGE, 2020. (ISBN 978-65-87201-33-7). Disponível em: https://biblioteca.ibge.gov.br/visualizacao/livros/liv101764.pdf. Acesso em: 28 jun. 2026.
+
+IBGE – INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. **Pesquisa Nacional de Saúde 2019**: microdados. Rio de Janeiro: IBGE, 2020. Disponível em: https://ftp.ibge.gov.br/PNS/2019/. Acesso em: 28 jun. 2026.
+
+
+---
 ## Notas Metodológicas
 
 ### Prevalência vs. Distribuição — gráficos de depressão por sexo
@@ -99,6 +120,9 @@ Este projeto adota a **prevalência por grupo** como métrica principal,
 por ser a medida padrão em estudos epidemiológicos de saúde mental.
 
 ---
+## Nota sobre uso de IA
+
+Este projeto utilizou Claude (Anthropic) como ferramenta de assistência no desenvolvimento do código estruturação da análise e revisão da documentação. Todas as fontes de dados e referências bibliográficas são verificáveis e estão listadas neste README.
 
 ## Visualizações
 
@@ -114,6 +138,10 @@ por ser a medida padrão em estudos epidemiológicos de saúde mental.
 ### Prevalência de Depressão por Faixa Etária — PNS 2019
 ![Depressão por Faixa Etária](outputs/figures/04_depressao_por_faixa_etaria.png)
 
+---
+## Dashboard
+
+![Dashboard Saúde Mental no Brasil](outputs/figures/dashboard_saude_mental.png)
 ---
 
 ## Como reproduzir

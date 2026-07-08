@@ -5,7 +5,9 @@
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)](https://powerbi.microsoft.com)
 
 ---
+Status do projeto
 
+✅ Concluído
 ## Sobre o projeto
 
 Análise exploratória do perfil epidemiológico dos transtornos mentais no Brasil,
